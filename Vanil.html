@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  height: 50vh;
+}
+
+.contents {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 420px;
+  margin: auto;
+  background: #FF4500;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn:hover::before {
+  -webkit-animation: sword .5s;
+          animation: sword .5s;
+}
+
+@-webkit-keyframes sword {
+  0% {top: -100px; visibility: hidden; opacity: 0;}
+  20% {visibility: visible; opacity: 1;}
+  100% {top: 100px; visibility: hidden; opacity: 0;}
+}
+
+@keyframes sword {
+  0% {top: -100px; visibility: hidden; opacity: 0;}
+  20% {visibility: visible; opacity: 1;}
+  100% {top: 100px; visibility: hidden; opacity: 0;}
+}
+
+.btn a {
+  display: block;
+  color: #FF4500;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.btn a::before,
+.btn a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 38px;
+  border-top: 1px solid #FF4500;
+  border-bottom: 1px solid #FF4500;
+  -webkit-transition: all .5s 0s;
+  transition: all .5s 0s;
+}
+
+.btn a::before {
+  left: 0;
+  border-left: 1px solid #FF4500;
+}
+
+.btn a::after {
+  right: 0;
+  border-right: 1px solid #FF4500;
+}
+
+.btn a:hover::before {
+  left: -20px;
+  -webkit-transition: all .5s .2s;
+  transition: all .5s .2s;
+  opacity: 0;
+}
+
+.btn a:hover::after {
+  right: -20px;
+  -webkit-transition: all .5s .2s;
+  transition: all .5s .2s;
+  opacity: 0;
+}
+
+
+.ex {
+    float: left; /* Обтекание по правому краю */
+    background: #FFFFFF; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    margin-right: 20px; /* Отступ справа */
+    width: 50%; /* Ширина блока */
+   }
+.ex1 {
+     float: right; /* Обтекание по правому краю */
+    background: #FFFFFF; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    margin-left: 20px; /* Отступ справа */
+    width: 45%; /* Ширина блока */
+   }
+p2{
+font-family: "Times New Roman", Georgia, Serif;
+    font-weight: normal;
+    font-stretch: semi-expanded;
+    font-style: normal;
+    font-size: x-large; 
+    font-size-adjust: none;
+    line-height: 1.5;
+    margin-top: 0%;
+}
+
+h1 {
+    height: 100%;
+    margin: 0;
+    font: 200% serif;
+    color: #FF4500;
+}
+h2 {
+    color: #4169E1;
+font-family: "Times New Roman", Georgia, Serif;
+    font-weight: normal;
+    font-stretch: semi-expanded;
+    font-style: normal;
+    font-size: x-large; 
+    font-size-adjust: none;
+    margin-top: 0%;
+}
+.rightpic {
+    margin-left: 50%;
+   }
+p  {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-weight: normal;
+    font-stretch: semi-expanded;
+    font-style: normal;
+    font-size: x-large; 
+    font-size-adjust: none;
+    line-height: 1.5;
+    margin-top: 0%;
+}
+</style>
+</head>
+<body>
+<div class ="ex">
+<h1>NEMOLOKO ОВСЯНОЕ ВАНИЛЬНОЕ</h1>	
+<p>Ванильное Nemoloko – это вкусный, лёгкий, ароматный напиток, который вы обязательно должны попробовать.В ванильном Nemoloko мы сохранили пользу овса, о которой вы уже знаете, и украсили этот вкус ванилью - тропической пряностью, способствующей выработке «гормона удовольствия» – серотонина.Нежный ванильный напиток Nemoloko станет прекрасной основой для любых коктейлей на завтрак, отличным завершением обеда или приятным перекусом в течение дня. В нашем продукте нет ни грамма добавленного сахара.</p>
+	<h1>Факты</h1>
+<p>Ваниль – невероятно дорогая пряность. В XIV веке ацтеки использовали ее плоды в качестве денег, приобретая на них продукты питания, одежду и даже ювелирные изделия. Высокая стоимость ванили объясняется тем, что из более 100 известных видов растения культивируют лишь три.
+При этом благоухающие стручки появляются лишь у половины цветков, что делает процесс производства этой пряности еще более длительным и дорогостоящим.
+Уже сегодня вы легко можете разнообразить меню, используя ванильный напиток Nemoloko в качестве добавки к выпечке и другим десертам. Это сделает блюда наиболее привлекательными и богатыми на вкус.</p>
+<h1>Рецепты</h1>
+<video width="600" height="490" controls="controls">
+<source src="video/12.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+<br></br>
+<br></br>
+<br></br>
+</div>  
+<br></br>
+<div class = "ex1"> 
+ <p><img src="img/14(4).png" 
+  width="340" height="600" alt="lorem"></p>
+<h2 align="left">Объем</h2>				
+<p2 align="left">1 л</p2>	
+<br></br>									
+<h2 align="left">Состав</h2>
+<p2 align="left">Вода, овсяная мука, рапсовое масло, витаминно-минеральный премикс (витамин D2, витамин В2 (рибофлавин), кальций (трикальций фосфат), кальция карбонат), экстракт ванили, соль.<p2>
+<br></br>															
+<h2 align="left">Пищевая ценность 100 мл продукта</h2>
+<table border="1"  class="marg">
+<tr><td>Энергетическая ценность, кДж (ккал)</td><td>250 (60)</td></tr>
+<tr><td>Белки, г</td><td>1</td></tr>
+<tr><td>Жиры, г</td><td>3,5</td></tr>
+<tr><td>Углеводы, г</td><td>6,5</td></tr>
+</table>
+<br></br>
+<br></br>
+</div>
+<br></br>
+<h1>Попробуйте также</h1>
+<br></br>
+ <p align="center">
+     <a href="OVS.html"><img src="img/12.png" alt="Фотография 1" width="340" height="500"></a>
+     <a href="OVS(1,5).html"><img src="img/13.png" alt="Фотография 2" width="340" height="500"></a>
+     <a href="Exoticko.html"><img src="img/11(2).png" alt="Фотография 3" width="340" height="500"></a>
+     <a href="Grechka.html"><img src="img/15.png" alt="Фотография 4" width="340" height="500"></a>
+  </p>
+  <div class="container">
+  <div class="contents">
+    <p class="btn"><a href="index.html">Back to menu</a></p>
+  </div>
+</div>
+</body>
+</html>

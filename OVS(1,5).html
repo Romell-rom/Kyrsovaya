@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  height: 50vh;
+}
+
+.contents {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.btn {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 420px;
+  margin: auto;
+  background: #FF4500;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn:hover::before {
+  -webkit-animation: sword .5s;
+          animation: sword .5s;
+}
+
+@-webkit-keyframes sword {
+  0% {top: -100px; visibility: hidden; opacity: 0;}
+  20% {visibility: visible; opacity: 1;}
+  100% {top: 100px; visibility: hidden; opacity: 0;}
+}
+
+@keyframes sword {
+  0% {top: -100px; visibility: hidden; opacity: 0;}
+  20% {visibility: visible; opacity: 1;}
+  100% {top: 100px; visibility: hidden; opacity: 0;}
+}
+
+.btn a {
+  display: block;
+  color: #FF4500;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.btn a::before,
+.btn a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 38px;
+  border-top: 1px solid #FF4500;
+  border-bottom: 1px solid #FF4500;
+  -webkit-transition: all .5s 0s;
+  transition: all .5s 0s;
+}
+
+.btn a::before {
+  left: 0;
+  border-left: 1px solid #FF4500;
+}
+
+.btn a::after {
+  right: 0;
+  border-right: 1px solid #FF4500;
+}
+
+.btn a:hover::before {
+  left: -20px;
+  -webkit-transition: all .5s .2s;
+  transition: all .5s .2s;
+  opacity: 0;
+}
+
+.btn a:hover::after {
+  right: -20px;
+  -webkit-transition: all .5s .2s;
+  transition: all .5s .2s;
+  opacity: 0;
+}
+
+
+.ex {
+    float: left; /* Обтекание по правому краю */
+    background: #FFFFFF; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    margin-right: 20px; /* Отступ справа */
+    width: 50%; /* Ширина блока */
+   }
+.ex1 {
+     float: right; /* Обтекание по правому краю */
+    background: #FFFFFF; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+    margin-left: 20px; /* Отступ справа */
+    width: 45%; /* Ширина блока */
+   }
+p2{
+font-family: "Times New Roman", Georgia, Serif;
+    font-weight: normal;
+    font-stretch: semi-expanded;
+    font-style: normal;
+    font-size: x-large; 
+    font-size-adjust: none;
+    line-height: 1.5;
+    margin-top: 0%;
+}
+
+h1 {
+    height: 100%;
+    margin: 0;
+    font: 200% serif;
+    color: #FF4500;
+}
+h2 {
+    color: #4169E1;
+font-family: "Times New Roman", Georgia, Serif;
+    font-weight: normal;
+    font-stretch: semi-expanded;
+    font-style: normal;
+    font-size: x-large; 
+    font-size-adjust: none;
+    margin-top: 0%;
+}
+.rightpic {
+    margin-left: 50%;
+   }
+p  {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-weight: normal;
+    font-stretch: semi-expanded;
+    font-style: normal;
+    font-size: x-large; 
+    font-size-adjust: none;
+    line-height: 1.5;
+    margin-top: 0%;
+}
+</style>
+</head>
+<body>
+<div class ="ex">
+<h1>NEMOLOKO ОВСЯНОЕ КЛАССИЧЕСКОЕ ЛАЙТ 1,5%</h1>	
+<p>Nemoloko овсяное классическое лайт с жирностью 1,5% — это отличный вариант для ежедневного использования, вместо обезжиренного молока.Продукт богат пищевыми волокнами, что способствует улучшению микрофлоры кишечника, помогает контролировать аппетит и эффективно снижать вес.
+Является источником незаменимых полиненасыщенных жирных кислот omega-3 и omega-6, которые содержатся в рапсовом масле.Nemoloko можно пить вместо молока, добавлять в чай и кофе, также использовать этот замечательный продукт для приготовления легкого и сбалансированного завтрака.</p>
+	<h1>Факты</h1>
+<p>Наш овсяный напиток произведён из 100% российского сырья — экологически чистого овса, выращенного в регионах Поволжья и Юга России.
+Исторически овёс считается одной из самых здоровых и полезных зерновых культур. Он привычен для нас, и его польза доказана многочисленными исследованиями.</p>
+<h1>Рецепты</h1>
+<video width="600" height="490" controls="controls">
+<source src="video/14.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+<br></br>
+<br></br>
+<br></br>
+</div>  
+<br></br>
+<div class = "ex1"> 
+ <p><img src="img/13(3).png" 
+  width="340" height="600" alt="lorem"></p>
+<h2 align="left">Объем</h2>				
+<p2 align="left">1 л</p2>	
+<br></br>									
+<h2 align="left">Состав</h2>
+<p2 align="left">Вода, овсяная мука, рапсовое масло, витаминно-минеральный премикс (витамин D2, витамин В2 (рибофлавин), кальций (трикальций фосфат), кальция карбонат), соль йодированная.<p2>
+<br></br>															
+<h2 align="left">Пищевая ценность 100 мл продукта</h2>
+<table border="1"  class="marg">
+<tr><td>Энергетическая ценность, кДж (ккал)</td><td>180(45)</td></tr>
+<tr><td>Белки, г</td><td>1</td></tr>
+<tr><td>Жиры, г</td><td>1,5</td></tr>
+<tr><td>Углеводы, г</td><td>6,5</td></tr>
+</table>
+<br></br>
+<br></br>
+</div>
+<br></br>
+<h1>Попробуйте также</h1>
+<br></br>
+ <p align="center">
+     <a href="Exoticko.html"><img src="img/11(2).png" width="250" height="490"></a>
+     <a href="OVS.html"><img src="img/13.png"  width="240" height="490"></a>
+     <a href="Vanil.html"><img src="img/14.png"  width="240" height="490"></a>
+     <a href="Grechka.html"><img src="img/15.png"  width="250" height="490"></a>
+  </p>
+  <div class="container">
+  <div class="contents">
+    <p class="btn"><a href="index.html">Back to menu</a></p>
+  </div>
+</div>
+</body>
+</html>
